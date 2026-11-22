@@ -1,0 +1,11 @@
+[
+ {"country": "EUR", "label": "Inflation zone euro (flash)", "date": "2026-12-01T10:00:00+00:00", "source": "Eurostat (calendrier officiel)"},
+ {"country": "EUR", "label": "Décision de taux de la BCE", "date": "2026-12-17T13:15:00+00:00", "source": "BCE (calendrier officiel)"},
+ {"country": "EUR", "label": "Inflation zone euro (flash)", "date": "2027-01-06T10:00:00+00:00", "source": "Eurostat (calendrier officiel)"},
+ {"country": "EUR", "label": "Inflation zone euro (flash)", "date": "2027-02-02T10:00:00+00:00", "source": "Eurostat (calendrier officiel)"},
+ {"country": "EUR", "label": "Décision de taux de la BCE", "date": "2027-02-04T13:15:00+00:00", "source": "BCE (calendrier officiel)"},
+ {"country": "EUR", "label": "Inflation zone euro (flash)", "date": "2027-03-02T10:00:00+00:00", "source": "Eurostat (calendrier officiel)"},
+ {"country": "EUR", "label": "Décision de taux de la BCE", "date": "2027-03-18T13:15:00+00:00", "source": "BCE (calendrier officiel)"},
+ {"country": "EUR", "label": "Inflation zone euro (flash)", "date": "2027-03-31T09:00:00+00:00", "source": "Eurostat (calendrier officiel)"},
+ {"country": "EUR", "label": "Décision de taux de la BCE", "date": "2027-04-29T12:15:00+00:00", "source": "BCE (calendrier officiel)"}
+]
