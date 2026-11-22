@@ -10,31 +10,29 @@ REFRESH-INTERVAL;VALUE=DURATION:PT6H
 X-PUBLISHED-TTL:PT6H
 BEGIN:VEVENT
 UID:8fb683cf9f139b31@calendrier-eco
-DTSTAMP:20261122T221647Z
+DTSTAMP:20261122T221655Z
 DTSTART:20261123T090000Z
 DTEND:20261123T091500Z
 TRANSP:TRANSPARENT
-SUMMARY:🇪🇺 PMI manufacturier zone euro (flash) · PMI services zone 
- euro (flash)
-DESCRIPTION:PMI manufacturier zone euro (flash) — impact faible\, prévi
- sion 52.7\, précédent 52.4\nPMI services zone euro (flash) — impact fa
- ible\, prévision 51.8\, précédent 51.7
+SUMMARY:🇪🇺 PMI manufacturier (flash) · PMI services (flash)
+DESCRIPTION:PMI manufacturier (flash) — impact faible\, prévision 52.7\
+ , précédent 52.4\nPMI services (flash) — impact faible\, prévision 51
+ .8\, précédent 51.7
 END:VEVENT
 BEGIN:VEVENT
 UID:1a55e2c5507f8874@calendrier-eco
-DTSTAMP:20261122T221647Z
+DTSTAMP:20261122T221655Z
 DTSTART:20261123T144500Z
 DTEND:20261123T150000Z
 TRANSP:TRANSPARENT
-SUMMARY:🇺🇸 PMI manufacturier zone euro (flash) · PMI services zone 
- euro (flash)
-DESCRIPTION:PMI manufacturier zone euro (flash) — impact moyen\, prévis
- ion 54.5\, précédent 56.0\nPMI services zone euro (flash) — impact moy
- en\, prévision 55.6\, précédent 57.9
+SUMMARY:🇺🇸 PMI manufacturier (flash) · PMI services (flash)
+DESCRIPTION:PMI manufacturier (flash) — impact moyen\, prévision 54.5\,
+  précédent 56.0\nPMI services (flash) — impact moyen\, prévision 55.6
+ \, précédent 57.9
 END:VEVENT
 BEGIN:VEVENT
 UID:a958a5412bb9ebd9@calendrier-eco
-DTSTAMP:20261122T221647Z
+DTSTAMP:20261122T221655Z
 DTSTART:20261124T090000Z
 DTEND:20261124T091500Z
 TRANSP:TRANSPARENT
@@ -44,7 +42,7 @@ DESCRIPTION:Climat des affaires Ifo (Allemagne) — impact faible\, prévi
 END:VEVENT
 BEGIN:VEVENT
 UID:20339fd653c76399@calendrier-eco
-DTSTAMP:20261122T221647Z
+DTSTAMP:20261122T221655Z
 DTSTART:20261124T150000Z
 DTEND:20261124T151500Z
 TRANSP:TRANSPARENT
@@ -54,7 +52,7 @@ DESCRIPTION:Confiance des consommateurs (Conference Board) — impact moye
 END:VEVENT
 BEGIN:VEVENT
 UID:806def5ddb6ed0f1@calendrier-eco
-DTSTAMP:20261122T221647Z
+DTSTAMP:20261122T221655Z
 DTSTART:20261125T133000Z
 DTEND:20261125T134500Z
 TRANSP:TRANSPARENT
@@ -70,7 +68,7 @@ DESCRIPTION:Commandes de biens durables (hors transport) (sur un mois) —
 END:VEVENT
 BEGIN:VEVENT
 UID:b8a2fb6c665d9454@calendrier-eco
-DTSTAMP:20261122T221647Z
+DTSTAMP:20261122T221655Z
 DTSTART:20261126T123000Z
 DTEND:20261126T124500Z
 TRANSP:TRANSPARENT
@@ -79,7 +77,7 @@ DESCRIPTION:Minutes de la BCE — impact faible
 END:VEVENT
 BEGIN:VEVENT
 UID:66fc74a1ea8d797b@calendrier-eco
-DTSTAMP:20261122T221647Z
+DTSTAMP:20261122T221655Z
 DTSTART;VALUE=DATE:20261126
 DTEND;VALUE=DATE:20261127
 TRANSP:TRANSPARENT
@@ -88,7 +86,7 @@ DESCRIPTION:Jour férié US – Wall Street fermée — impact férié
 END:VEVENT
 BEGIN:VEVENT
 UID:c6e13cf9a920f251@calendrier-eco
-DTSTAMP:20261122T221647Z
+DTSTAMP:20261122T221655Z
 DTSTART:20261127T074500Z
 DTEND:20261127T080000Z
 TRANSP:TRANSPARENT
