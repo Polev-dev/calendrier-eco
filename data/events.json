@@ -1,4 +1,28 @@
 {
+ "0edd204cb66d24b2@calendrier-eco": {
+  "country": "USD",
+  "date": "2026-11-25T08:30:00-05:00",
+  "forecast": "0.5%",
+  "impact": "Low",
+  "previous": "1.8%",
+  "title": "Durable Goods Orders m/m"
+ },
+ "20339fd653c76399@calendrier-eco": {
+  "country": "USD",
+  "date": "2026-11-24T10:00:00-05:00",
+  "forecast": "92.1",
+  "impact": "Medium",
+  "previous": "91.7",
+  "title": "CB Consumer Confidence"
+ },
+ "2bc71bd7aebaff20@calendrier-eco": {
+  "country": "USD",
+  "date": "2026-11-23T09:45:00-05:00",
+  "forecast": "54.5",
+  "impact": "Medium",
+  "previous": "56.0",
+  "title": "Flash Manufacturing PMI"
+ },
  "3a25571a98ee7037@calendrier-eco": {
   "country": "EUR",
   "date": "2026-11-23T04:00:00-05:00",
@@ -14,14 +38,6 @@
   "impact": "Holiday",
   "previous": "",
   "title": "Bank Holiday"
- },
- "a55d7c7a3a79b886@calendrier-eco": {
-  "country": "USD",
-  "date": "2026-11-25T14:00:00-05:00",
-  "forecast": "",
-  "impact": "Low",
-  "previous": "",
-  "title": "Beige Book"
  },
  "a958a5412bb9ebd9@calendrier-eco": {
   "country": "EUR",
@@ -54,6 +70,22 @@
   "impact": "Low",
   "previous": "0.4%",
   "title": "French Prelim CPI m/m"
+ },
+ "d40fb243230c2003@calendrier-eco": {
+  "country": "USD",
+  "date": "2026-11-23T09:45:00-05:00",
+  "forecast": "55.6",
+  "impact": "Medium",
+  "previous": "57.9",
+  "title": "Flash Services PMI"
+ },
+ "e0d06ac7643a988f@calendrier-eco": {
+  "country": "USD",
+  "date": "2026-11-25T08:30:00-05:00",
+  "forecast": "0.5%",
+  "impact": "Low",
+  "previous": "0.5%",
+  "title": "Core Durable Goods Orders m/m"
  },
  "e90a6f140871c143@calendrier-eco": {
   "country": "USD",

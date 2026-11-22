@@ -6,6 +6,7 @@ Les événements déjà vus sont conservés dans data/events.json pour garder l'
 """
 import hashlib
 import json
+import re
 import sys
 import urllib.request
 from datetime import datetime, timedelta, timezone
@@ -23,16 +24,29 @@ FEEDS = [
 # Devises suivies
 COUNTRIES = {"USD": "🇺🇸", "EUR": "🇪🇺"}
 
-# Événements gardés même s'ils ne sont pas classés "High" par Forex Factory
-ALWAYS_KEEP = [
-    "ifo business climate",
-    "french flash cpi",
-    "french prelim cpi",
-    "german prelim cpi",
-    "fomc meeting minutes",
-    "ecb monetary policy meeting accounts",
-    "beige book",
-]
+# Indicateurs clés gardés quel que soit l'impact donné par Forex Factory
+# (FF classe par ex. l'ISM, le JOLTS ou l'inflation flash zone euro en "Medium").
+# Expressions régulières testées sur le titre, en minuscules.
+KEY_EVENTS = {
+    "USD": [
+        r"^federal funds rate", r"^fomc (statement|press conference|meeting minutes)",
+        r"^fed chair", r"^(core )?cpi m/m", r"^(core )?ppi m/m", r"^non-farm employment change",
+        r"^unemployment rate", r"^average hourly earnings", r"^(core )?pce price index m/m",
+        r"^(advance|prelim|final) gdp q/q", r"^(core )?retail sales m/m", r"^ism (manufacturing|services) pmi",
+        r"^jolts job openings", r"^cb consumer confidence", r"^prelim uom consumer sentiment",
+        r"^(core )?durable goods orders", r"^employment cost index", r"^adp non-farm",
+        r"^flash (manufacturing|services) pmi", r"election", r"jackson hole",
+    ],
+    "EUR": [
+        r"^main refinancing rate", r"^monetary policy statement", r"^ecb press conference",
+        r"^(core )?cpi flash estimate", r"^flash (manufacturing|services) pmi", r"^german ifo",
+        r"^german prelim cpi m/m", r"^french (flash|prelim) cpi m/m", r"^(prelim )?flash gdp q/q",
+        r"^german prelim gdp q/q", r"^ecb monetary policy meeting accounts",
+    ],
+}
+# Événements jamais gardés (trop fréquents / redondants), même en "High"
+EXCLUDE = [r"^unemployment claims", r"^german flash", r"^french flash (manufacturing|services)",
+           r"gdp price index", r"y/y$"]
 
 # Traductions (correspondance sur le début du titre, insensible à la casse)
 TRANSLATIONS = [
@@ -42,6 +56,12 @@ TRANSLATIONS = [
     ("fomc meeting minutes", "Minutes de la Fed"),
     ("fomc economic projections", "Projections économiques de la Fed"),
     ("fed chair", "Discours du président de la Fed"),
+    ("congressional elections", "Élections de mi-mandat US"),
+    ("adp non-farm employment change", "Emploi privé ADP"),
+    ("employment cost index", "Coût de l'emploi (ECI)"),
+    ("german prelim gdp", "PIB Allemagne (provisoire)"),
+    ("flash gdp", "PIB zone euro (flash)"),
+    ("monetary policy statement", "Communiqué de la BCE"),
     ("beige book", "Livre beige de la Fed"),
     ("main refinancing rate", "Décision de taux de la BCE"),
     ("monetary policy statement", "Communiqué de la BCE"),
@@ -105,18 +125,19 @@ def translate(title: str) -> str:
 
 
 def keep(ev: dict) -> bool:
-    if ev.get("country") not in COUNTRIES:
+    country = ev.get("country")
+    if country not in COUNTRIES:
         return False
-    impact = ev.get("impact")
     title = ev.get("title", "").lower()
-    if impact == "High":
+    if any(re.search(p, title) for p in EXCLUDE):
+        # le y/y est redondant avec le m/m publié à la même heure, sauf s'il n'existe qu'en y/y
+        if not (title.endswith("y/y") and "flash estimate" in title):
+            return False
+    if ev.get("impact") == "Holiday":
+        return country == "USD" and "daylight" not in title
+    if any(re.search(p, title) for p in KEY_EVENTS[country]):
         return True
-    if impact == "Holiday" and ev.get("country") == "USD":
-        return True
-    # PMI flash : seulement ceux de la zone euro (pas France/Allemagne/US, trop redondants)
-    if ev.get("country") == "EUR" and title.startswith("flash") and "pmi" in title:
-        return True
-    return any(k in title for k in ALWAYS_KEEP)
+    return ev.get("impact") == "High"
 
 
 def fetch(url: str):
