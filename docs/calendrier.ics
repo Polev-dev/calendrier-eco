@@ -1,0 +1,82 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//calendrier-eco//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Temps forts éco
+X-WR-CALDESC:Publications économiques majeures (zone euro + États-Unis)
+X-WR-TIMEZONE:Europe/Paris
+REFRESH-INTERVAL;VALUE=DURATION:PT6H
+X-PUBLISHED-TTL:PT6H
+BEGIN:VEVENT
+UID:8fb683cf9f139b31@calendrier-eco
+DTSTAMP:20261122T220853Z
+DTSTART:20261123T090000Z
+DTEND:20261123T091500Z
+TRANSP:TRANSPARENT
+SUMMARY:🇪🇺 PMI manufacturier zone euro (flash) · PMI services zone 
+ euro (flash)
+DESCRIPTION:PMI manufacturier zone euro (flash) — impact faible\, prévi
+ sion 52.7\, précédent 52.4\nPMI services zone euro (flash) — impact fa
+ ible\, prévision 51.8\, précédent 51.7
+END:VEVENT
+BEGIN:VEVENT
+UID:a958a5412bb9ebd9@calendrier-eco
+DTSTAMP:20261122T220853Z
+DTSTART:20261124T090000Z
+DTEND:20261124T091500Z
+TRANSP:TRANSPARENT
+SUMMARY:🇪🇺 Climat des affaires Ifo (Allemagne)
+DESCRIPTION:Climat des affaires Ifo (Allemagne) — impact faible\, prévi
+ sion 90.6\, précédent 90.2
+END:VEVENT
+BEGIN:VEVENT
+UID:fce9ace6365ac1d8@calendrier-eco
+DTSTAMP:20261122T220853Z
+DTSTART:20261125T133000Z
+DTEND:20261125T134500Z
+TRANSP:TRANSPARENT
+SUMMARY:🇺🇸 Inflation PCE sous-jacente (sur un mois) · PIB (2e estim
+ ation) (sur un trimestre)
+DESCRIPTION:Inflation PCE sous-jacente (sur un mois) — impact fort\, pr
+ évision 0.3%\, précédent 0.3%\nPIB (2e estimation) (sur un trimestre) 
+ — impact fort\, prévision 3.5%\, précédent 3.4%
+END:VEVENT
+BEGIN:VEVENT
+UID:a55d7c7a3a79b886@calendrier-eco
+DTSTAMP:20261122T220853Z
+DTSTART:20261125T190000Z
+DTEND:20261125T191500Z
+TRANSP:TRANSPARENT
+SUMMARY:🇺🇸 Livre beige de la Fed
+DESCRIPTION:Livre beige de la Fed — impact faible
+END:VEVENT
+BEGIN:VEVENT
+UID:b8a2fb6c665d9454@calendrier-eco
+DTSTAMP:20261122T220853Z
+DTSTART:20261126T123000Z
+DTEND:20261126T124500Z
+TRANSP:TRANSPARENT
+SUMMARY:🇪🇺 Minutes de la BCE
+DESCRIPTION:Minutes de la BCE — impact faible
+END:VEVENT
+BEGIN:VEVENT
+UID:66fc74a1ea8d797b@calendrier-eco
+DTSTAMP:20261122T220853Z
+DTSTART;VALUE=DATE:20261126
+DTEND;VALUE=DATE:20261127
+TRANSP:TRANSPARENT
+SUMMARY:🇺🇸 Jour férié US – Wall Street fermée
+DESCRIPTION:Jour férié US – Wall Street fermée — impact férié
+END:VEVENT
+BEGIN:VEVENT
+UID:c6e13cf9a920f251@calendrier-eco
+DTSTAMP:20261122T220853Z
+DTSTART:20261127T074500Z
+DTEND:20261127T080000Z
+TRANSP:TRANSPARENT
+SUMMARY:🇪🇺 Inflation en France (provisoire) (sur un mois)
+DESCRIPTION:Inflation en France (provisoire) (sur un mois) — impact faib
+ le\, prévision -0.1%\, précédent 0.4%
+END:VEVENT
+END:VCALENDAR

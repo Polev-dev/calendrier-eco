@@ -1,0 +1,74 @@
+{
+ "3a25571a98ee7037@calendrier-eco": {
+  "country": "EUR",
+  "date": "2026-11-23T04:00:00-05:00",
+  "forecast": "52.7",
+  "impact": "Low",
+  "previous": "52.4",
+  "title": "Flash Manufacturing PMI"
+ },
+ "66fc74a1ea8d797b@calendrier-eco": {
+  "country": "USD",
+  "date": "2026-11-26T08:00:00-05:00",
+  "forecast": "",
+  "impact": "Holiday",
+  "previous": "",
+  "title": "Bank Holiday"
+ },
+ "a55d7c7a3a79b886@calendrier-eco": {
+  "country": "USD",
+  "date": "2026-11-25T14:00:00-05:00",
+  "forecast": "",
+  "impact": "Low",
+  "previous": "",
+  "title": "Beige Book"
+ },
+ "a958a5412bb9ebd9@calendrier-eco": {
+  "country": "EUR",
+  "date": "2026-11-24T04:00:00-05:00",
+  "forecast": "90.6",
+  "impact": "Low",
+  "previous": "90.2",
+  "title": "German ifo Business Climate"
+ },
+ "b028b610f15295d7@calendrier-eco": {
+  "country": "USD",
+  "date": "2026-11-25T08:30:00-05:00",
+  "forecast": "3.5%",
+  "impact": "High",
+  "previous": "3.4%",
+  "title": "Prelim GDP q/q"
+ },
+ "b8a2fb6c665d9454@calendrier-eco": {
+  "country": "EUR",
+  "date": "2026-11-26T07:30:00-05:00",
+  "forecast": "",
+  "impact": "Low",
+  "previous": "",
+  "title": "ECB Monetary Policy Meeting Accounts"
+ },
+ "c6e13cf9a920f251@calendrier-eco": {
+  "country": "EUR",
+  "date": "2026-11-27T02:45:00-05:00",
+  "forecast": "-0.1%",
+  "impact": "Low",
+  "previous": "0.4%",
+  "title": "French Prelim CPI m/m"
+ },
+ "e90a6f140871c143@calendrier-eco": {
+  "country": "USD",
+  "date": "2026-11-25T08:30:00-05:00",
+  "forecast": "0.3%",
+  "impact": "High",
+  "previous": "0.3%",
+  "title": "Core PCE Price Index m/m"
+ },
+ "f3b32f4bdac88d86@calendrier-eco": {
+  "country": "EUR",
+  "date": "2026-11-23T04:00:00-05:00",
+  "forecast": "51.8",
+  "impact": "Low",
+  "previous": "51.7",
+  "title": "Flash Services PMI"
+ }
+}
