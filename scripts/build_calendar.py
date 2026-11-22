@@ -114,13 +114,15 @@ TRANSLATIONS = [
 IMPACT_FR = {"High": "Fort", "Medium": "Moyen", "Low": "Faible", "Holiday": "Férié"}
 
 
-def translate(title: str) -> str:
+def translate(title: str, suffix: bool = True) -> str:
     low = title.lower()
     matches = [(k, fr) for k, fr in TRANSLATIONS if k in low]
     if not matches:
         return title
     _, fr = max(matches, key=lambda m: len(m[0]))  # la correspondance la plus précise
     suffixes = {" m/m": " (sur un mois)", " q/q": " (sur un trimestre)", " y/y": " (sur un an)"}
+    if not suffix:
+        return fr
     return fr + next((v for k, v in suffixes.items() if low.endswith(k)), "")
 
 
@@ -192,8 +194,12 @@ def build_ics(events: list) -> str:
     for (country, date), evs in sorted(groups.items(), key=lambda g: g[0][1]):
         start = datetime.fromisoformat(date)
         flag = COUNTRIES[country]
-        names = list(dict.fromkeys(translate(e["title"]) for e in evs))
-        name = " · ".join(names)
+        if len(evs) == 1:
+            name = translate(evs[0]["title"])
+        else:  # titres courts, sans doublons (ex. biens durables / biens durables hors transport)
+            names = list(dict.fromkeys(translate(e["title"], suffix=False) for e in evs))
+            names = [n for n in names if not any(o != n and n.startswith(o) for o in names)]
+            name = " · ".join(names)
         all_day = any(e.get("impact") == "Holiday" for e in evs) or (start.hour == 0 and start.minute == 0)
         desc = []
         for e in evs:
