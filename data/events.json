@@ -2,7 +2,7 @@
  "0edd204cb66d24b2@calendrier-eco": {
   "country": "USD",
   "date": "2026-11-25T08:30:00-05:00",
-  "forecast": "0.5%",
+  "forecast": "0.7%",
   "impact": "Low",
   "previous": "1.8%",
   "title": "Durable Goods Orders m/m"
@@ -10,7 +10,7 @@
  "20339fd653c76399@calendrier-eco": {
   "country": "USD",
   "date": "2026-11-24T10:00:00-05:00",
-  "forecast": "92.1",
+  "forecast": "92.4",
   "impact": "Medium",
   "previous": "91.7",
   "title": "CB Consumer Confidence"
@@ -42,7 +42,7 @@
  "a958a5412bb9ebd9@calendrier-eco": {
   "country": "EUR",
   "date": "2026-11-24T04:00:00-05:00",
-  "forecast": "90.6",
+  "forecast": "90.5",
   "impact": "Low",
   "previous": "90.2",
   "title": "German ifo Business Climate"
@@ -66,7 +66,7 @@
  "c6e13cf9a920f251@calendrier-eco": {
   "country": "EUR",
   "date": "2026-11-27T02:45:00-05:00",
-  "forecast": "-0.1%",
+  "forecast": "-0.2%",
   "impact": "Low",
   "previous": "0.4%",
   "title": "French Prelim CPI m/m"
